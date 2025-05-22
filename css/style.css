@@ -354,3 +354,71 @@ h2::after {
 @keyframes rotateBorder {
   to { transform: rotate(360deg); }
 }
+
+/* Tablet: hasta 768px */
+@media (max-width: 768px) {
+  .counter-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5em;
+    padding: 0 0.5em;
+  }
+  .time-value { font-size: 2rem; }
+  .time-label { font-size: 0.75rem; }
+  .total-column { padding: 0 1em; }
+  .month-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    padding: 0 0.5em;
+  }
+  .month-icon {
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.4rem;
+  }
+  .month-label { font-size: 0.9rem; }
+  .collage-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1em;
+    padding: 0 0.5em 1.5em;
+  }
+}
+
+/* Móvil pequeño: hasta 480px */
+@media (max-width: 480px) {
+  header h1 { font-size: 1.3rem; padding: 0.4em; }
+  h2 { font-size: 1.1rem; }
+  .counter-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.4em;
+    margin-bottom: 1em;
+    padding: 0 0.3em;
+  }
+  .time-value { font-size: 1.6rem; }
+  .time-box { padding: 0.6em 0.3em; border-radius: 12px; }
+  .total-column .time-box { max-width: 160px; }
+  .month-grid {
+    grid-template-columns: 1fr;
+    gap: 0.8em;
+    padding: 0;
+    margin-bottom: 1.5em;
+  }
+  .month-item {
+    max-width: 100px;
+    padding: 0.6em 0.3em;
+  }
+  .month-icon {
+    width: 2.8rem;
+    height: 2.8rem;
+    line-height: 2.8rem;
+    font-size: 1.2rem;
+  }
+  .month-label { font-size: 0.85rem; }
+  .collage-grid {
+    grid-template-columns: 1fr;
+    padding: 0 0.3em 1em;
+    gap: 0.8em;
+  }
+  nav button { font-size: 0.9rem; padding: 0.7em; }
+}
+

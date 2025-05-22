@@ -1,6 +1,6 @@
 (() => {
   const start = new Date('2025-03-22T00:00:00');
-  const MAX_MONTHS = 10000;
+  const MAX_MONTHS = 1000;
   const grid = document.getElementById('achievements');
 
   for (let i = 1; i <= MAX_MONTHS; i++) {
