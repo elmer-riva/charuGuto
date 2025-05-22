@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Charu y Guto</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <link rel="manifest" href="assets/site.webmanifest">
+  <meta name="theme-color" content="#300010">
+</head>
+
+<body>
+  <div id="confetti"></div>
+  <header><h1>❤️ CHARU Y GUTO ❤️</h1></header>
+  <main>
+    <section id="view-counter" class="view">
+      <h2>Tiempo juntos</h2>
+      <div class="counter-grid">
+        <div class="time-box"><span id="days" class="time-value">00</span><span class="time-label">días</span></div>
+        <div class="time-box"><span id="hours" class="time-value">00</span><span class="time-label">horas</span></div>
+        <div class="time-box"><span id="minutes" class="time-value">00</span><span class="time-label">minutos</span></div>
+        <div class="time-box"><span id="seconds" class="time-value">00</span><span class="time-label">segundos</span></div>
+      </div>
+
+      <h2>Total Acumulado</h2>
+      <div class="total-column">
+        <div class="time-box"><span id="t-days" class="time-value">00</span><span class="time-label">días</span></div>
+        <div class="time-box"><span id="t-hours" class="time-value">00</span><span class="time-label">horas</span></div>
+        <div class="time-box"><span id="t-minutes" class="time-value">00</span><span class="time-label">minutos</span></div>
+        <div class="time-box"><span id="t-seconds" class="time-value">00</span><span class="time-label">segundos</span></div>
+      </div>
+
+      <h2>Nuestras Memorias</h2>
+      <div class="collage-grid">
+        <div class="collage-item">
+          <img src="assets/img1.jpeg" alt="Recuerdo A1">
+          <img src="assets/img2.jpeg" alt="Recuerdo A2">
+          <img src="assets/img3.jpeg" alt="Recuerdo A3">
+          <img src="assets/img4.jpeg" alt="Recuerdo A4">
+        </div>
+        <div class="collage-item">
+          <img src="assets/img5.jpeg" alt="Recuerdo B1">
+          <img src="assets/img6.jpeg" alt="Recuerdo B2">
+          <img src="assets/img7.jpeg" alt="Recuerdo B3">
+          <img src="assets/img8.jpeg" alt="Recuerdo B4">
+        </div>
+        <div class="collage-item">
+          <img src="assets/img9.jpeg" alt="Recuerdo C1">
+          <img src="assets/img10.jpeg" alt="Recuerdo C2">
+          <img src="assets/img11.jpeg" alt="Recuerdo C3">
+          <img src="assets/img12.jpeg" alt="Recuerdo C4">
+        </div>
+        <div class="collage-item">
+          <img src="assets/img13.jpeg" alt="Recuerdo D1">
+          <img src="assets/img14.jpeg" alt="Recuerdo D2">
+          <img src="assets/img15.jpeg" alt="Recuerdo D3">
+          <img src="assets/img16.jpeg" alt="Recuerdo D4">
+        </div>
+        <div class="collage-item">
+          <img src="assets/img17.jpeg" alt="Recuerdo D1">
+          <img src="assets/img18.jpeg" alt="Recuerdo D2">
+          <img src="assets/img19.jpeg" alt="Recuerdo D3">
+          <img src="assets/img20.jpeg" alt="Recuerdo D4">
+        </div>
+        <div class="collage-item">
+          <img src="assets/img21.jpeg" alt="Recuerdo D1">
+          <img src="assets/img22.jpeg" alt="Recuerdo D2">
+          <img src="assets/img23.jpeg" alt="Recuerdo D3">
+          <img src="assets/img24.jpeg" alt="Recuerdo D4">
+        </div>
+      </div>
+    </section>
+    <section id="view-achievements" class="view hidden">
+      <h2>Logros Mensuales</h2>
+      <div class="month-grid" id="achievements"></div>
+    </section>
+  </main>
+
+  <nav>
+    <button data-view="counter" class="active">Inicio</button>
+    <button data-view="achievements">Logros</button>
+  </nav>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
